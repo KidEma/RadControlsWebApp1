@@ -112,6 +112,7 @@
     <Content Include="App_Data\RadCaptcha\Y.wav" />
     <Content Include="App_Data\RadCaptcha\Z.wav" />
     <Content Include="App_Data\RandomWords.txt" />
+    <Content Include="css\white-and-blue.css" />
     <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
