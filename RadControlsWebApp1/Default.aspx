@@ -122,7 +122,7 @@
              </div><div>       
         <telerik:RadButton ID="Generar" runat="server" OnClientClicked="Generar_Clicked" Text="Name my band!" ButtonType="StandardButton" AutoPostBack="false"></telerik:RadButton> 
                 </div><div>      
-        <telerik:RadTextBox ID="Resultado" ReadOnly="true" runat="server" Width="600px" TextMode="MultiLine" Label="Your band will be known as... " > </telerik:RadTextBox>
+        <telerik:RadTextBox ID="Resultado" ReadOnly="true" runat="server" Width="100%" TextMode="MultiLine" Label="Your band will be known as... " > </telerik:RadTextBox>
         </div>
 	</div>
               </div>
