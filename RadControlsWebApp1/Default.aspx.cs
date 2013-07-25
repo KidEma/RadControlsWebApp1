@@ -28,6 +28,7 @@ public partial class Default : System.Web.UI.Page
             string[] arrWords = words.Split(' ');
             Random random = new Random();
             int randomNumber;
+            words = "";
             for (int i = 0; i < 20; i++)
             {
                 randomNumber = random.Next(0, arrWords.Length);
@@ -39,7 +40,7 @@ public partial class Default : System.Web.UI.Page
     }
     public string getRandomWords() {
         string words = "";
-        string path = Server.MapPath("~");
+        string path = HttpContext.Current.Server.MapPath("~");
         path = path + "RandomWords.txt";
 
         // Delete the file if it exists.
@@ -58,8 +59,6 @@ public partial class Default : System.Web.UI.Page
             }
         }
         else words = "Could not load suggestions!";
-
-
         return words;
 
     }
