@@ -162,7 +162,7 @@
       </div>
     </div>
   </div>
-        <div id="footer">Open Source Design Template sponsored by <a href="http://www.cmgtechnologies.com/">CMG Technologies</a> <- just thought should say thanx!<a href="#"></a>. </div>
+        <div id="footer">App by Ema!</a><a href="#"></a> </div>
 </div>
 	</form>
 </body>
