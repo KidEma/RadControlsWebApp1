@@ -45,10 +45,11 @@ public partial class Default : System.Web.UI.Page
         // Delete the file if it exists.
         if (File.Exists(path))
         {
+            string s = "";
             // Open the stream and read it back.
             using (StreamReader sr = File.OpenText(path))
             {
-                string s = "";
+               
                 while ((s = sr.ReadLine()) != null)
                 {
                     words = words + s;
