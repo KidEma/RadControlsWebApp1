@@ -40,7 +40,7 @@ public partial class Default : System.Web.UI.Page
     }
     public string getRandomWords() {
         string words = "";
-        string path = HttpContext.Current.Server.MapPath("~");
+        string path = Server.MapPath("~");
         path = path + "RandomWords.txt";
 
         // Delete the file if it exists.
