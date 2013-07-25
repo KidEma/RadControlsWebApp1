@@ -49,7 +49,7 @@ public partial class Default : System.Web.UI.Page
             // Open the stream and read it back.
             using (StreamReader sr = File.OpenText(path))
             {
-               
+
                 while ((s = sr.ReadLine()) != null)
                 {
                     words = words + s;
@@ -57,6 +57,7 @@ public partial class Default : System.Web.UI.Page
                 }
             }
         }
+        else words = "Could not load suggestions!";
 
 
         return words;
