@@ -58,10 +58,30 @@
                 };
                 function nameSiamese() {
                     var words = getWords();
+                    var randomnumber;  
+                    var RandomWords;
+                    randomnumber = Math.floor(Math.random() * words.length);                    
+                    while (words[randomnumber].length > 5 || words[randomnumber].length < 1)
+                    {
+                        randomnumber = Math.floor(Math.random() * words.length);
+                        
+                    }
+                    RandomWords = words[randomnumber];
+                    randomnumber = Math.floor(Math.random() * words.length);
+                    while (words[randomnumber].length > 5 || words[randomnumber].length < 1) {
+                        randomnumber = Math.floor(Math.random() * words.length);
+                    }
+                    RandomWords = RandomWords + words[randomnumber];
+                    var Resultado = $telerik.findTextBox('Resultado');
+                    Resultado.set_value(RandomWords);
+
+                };
+                function NameNumber() {
+                    var words = getWords();
                     var randomnumber = Math.floor(Math.random() * words.length);
                     var RandomWords = words[randomnumber];
-                    randomnumber = Math.floor(Math.random() * words.length);
-                    RandomWords = RandomWords + words[randomnumber];
+                    randomnumber = Math.floor(Math.random() * randomnumber * 10);
+                    RandomWords = RandomWords + ' ' + randomnumber.toString();
                     var Resultado = $telerik.findTextBox('Resultado');
                     Resultado.set_value(RandomWords);
 
@@ -81,6 +101,9 @@
                                 break;
                             case "Siamese":
                                 nameSiamese();
+                                break;
+                            case "NameNumber":
+                                NameNumber();
                                 break;
                         }
                         
@@ -117,6 +140,8 @@
                 <telerik:RadComboBoxItem Text="The (name)" Value="theName" />
                 <telerik:RadComboBoxItem Text="Drop The 'The'" Value="DropTheThe" />
                 <telerik:RadComboBoxItem Text="Siamese" Value="Siamese" />
+                <telerik:RadComboBoxItem Text="Name & Number" Value="NameNumber" />
+
             </Items>
         </telerik:RadComboBox> 
              </div><div>       
@@ -128,12 +153,16 @@
               </div>
         <div id="divider">&raquo; <a href="http://www.namepistol.com/bands/band-names-the-8-most-famous-styles.html">Band Name Styles</a> &raquo; <a href="#">Links</a> &raquo; </div>
   <div id="bottom">
-          <div id="bottomleft">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer a libero ac ante tempus interdum. Donec non purus. Donec sed dolor. Suspendisse faucibus. Aenean a nisl non ante nonummy hendrerit. Proin lacinia malesuada ipsum. Donec magna. Quisque risus magna, consectetuer non, suscipit sit amet, interdum ac, nibh</div>
+          <div id="bottomleft">Just type some random words and let me decide. If you don't seem to come up with any, click suggest for random words.  </div>
     <div id="bottomright">
-      <div id="div2">Nulla facilisi. Nullam lobortis, mauris et vehicula scelerisque, urna lectus faucibus diam, vel congue enim ligula ac tortor. Suspendisse venenatis auctor tellus. Nunc arcu elit, suscipit non, semper in, accumsan eget, felis. Cras id sapien at felis vulputate ullamcorper</div>
+      <div id="div2"> Coming features: 
+          * Saving and rating names.
+          * Band names with your names ((Lead Singer) & (The Band), The Acronym(ish) )
+          * Only existing band names or song names word suggestion.
+      </div>
     </div>
   </div>
-        <div id="footer">Open Source Design Template sponsored by <a href="http://www.cmgtechnologies.com/">CMG Technologies</a><a href="#"></a>. </div>
+        <div id="footer">Open Source Design Template sponsored by <a href="http://www.cmgtechnologies.com/">CMG Technologies</a> <- just thought should say thanx!<a href="#"></a>. </div>
 </div>
 	</form>
 </body>
