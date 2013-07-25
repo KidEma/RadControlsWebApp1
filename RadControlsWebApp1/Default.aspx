@@ -126,7 +126,7 @@
         </div>
 	</div>
               </div>
-        <div id="divider">&raquo; <a href="#">Links</a> &raquo; <a href="#">Links</a> &raquo; <a href="#">Links</a> &raquo; <a href="#">Links</a> &raquo; <a href="#">Links</a></div>
+        <div id="divider">&raquo; <a href="http://www.namepistol.com/bands/band-names-the-8-most-famous-styles.html">Band Name Styles</a> &raquo; <a href="#">Links</a> &raquo; </div>
   <div id="bottom">
           <div id="bottomleft">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer a libero ac ante tempus interdum. Donec non purus. Donec sed dolor. Suspendisse faucibus. Aenean a nisl non ante nonummy hendrerit. Proin lacinia malesuada ipsum. Donec magna. Quisque risus magna, consectetuer non, suscipit sit amet, interdum ac, nibh</div>
     <div id="bottomright">

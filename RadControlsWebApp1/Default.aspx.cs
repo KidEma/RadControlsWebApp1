@@ -29,7 +29,7 @@ public partial class Default : System.Web.UI.Page
             Random random = new Random();
             int randomNumber;
             words = "";
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 80; i++)
             {
                 randomNumber = random.Next(0, arrWords.Length);
                 words = words + " " + arrWords[randomNumber];
@@ -58,7 +58,6 @@ public partial class Default : System.Web.UI.Page
                 }
             }
         }
-        else words = "Could not load suggestions!";
         return words;
 
     }
